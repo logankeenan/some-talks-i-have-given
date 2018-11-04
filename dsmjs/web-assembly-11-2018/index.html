@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>dsmjs - Web Assembly & Javascript</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<section>
+    <h1>An Introduction to using Web Assembly with Javascript</h1>
+
+    <h2>Logan Keenan</h2>
+
+</section>
+<section>
+    <h1>What is Web Assembly?</h1>
+
+    <p>WebAssembly (abbreviated Wasm) is a binary instruction format for a stack-based virtual machine.</p>
+
+    <p>It's fast, safe, open, and part of the web platform. Currently, version 1.0 has shipped in all 4 major
+        browsers</p>
+
+    <!--
+    Notes:
+    Like of it like jvm bit code, but for the web.
+    Fast: runs at like native speeds
+    Safe: sandboxed and memory-safe
+    Open web: Can we run in the context of javascript
+    -->
+</section>
+<section>
+    <h1>How can we write/compile Web Assembly?</h1>
+
+    <p>Web Assembly can be the compiled target for a variety of languages.</p>
+
+
+    <h2>Rust</h2>
+    <p>
+        <quote>Rust is a systems programming language that runs blazingly fast, prevents segfaults, and guarantees
+            thread safety.
+        </quote>
+        <a href="https://www.rust-lang.org/en-US/">Source</a>
+    </p>
+    <p>
+        Rust is currently the most active community support Web Assembly as a compile target.
+        <a href="https://github.com/rustwasm">Github</a>
+    </p>
+    <!--
+     Notes:
+     C#, C, C++, java, go, python, etc..
+
+     Rust: create by Mozilla, used in FF, and fast.
+    -->
+</section>
+<section>
+    <h1>Getting started with Rust</h1>
+    <ol>
+        <li>
+            Install:
+            <pre>curl https://sh.rustup.rs -sSf | sh </pre>
+        </li>
+        <li>
+            Add emscripten compile target
+            <pre>rustup target add wasm32-unknown-emscripten</pre>
+        </li>
+        <li>
+            Setup Emscripten
+            <pre>curl https://s3.amazonaws.com/mozilla-games/emscripten/releases/emsdk-portable.tar.gz | tar -zxv -C ~/ </pre>
+            <pre>
+cd ~/emsdk-portable
+./emsdk update
+./emsdk install sdk-incoming-64bit
+./emsdk activate sdk-incoming-64bit</pre>
+        </li>
+    </ol>
+    <a href="https://github.com/raphamorim/wasm-and-rust#installing">Source</a>
+</section>
+
+
+</body>
+</html>

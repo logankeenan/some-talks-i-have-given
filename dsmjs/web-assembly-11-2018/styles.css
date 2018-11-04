@@ -1,0 +1,35 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    color: #333;
+    scroll-snap-type: y mandatory;
+    display: flex;
+    flex-flow: column nowrap;
+    height: 100vh;
+    overflow: auto;
+    flex: none;
+    font-family: 'Courier New';
+}
+
+section {
+    padding: 100px;
+    scroll-snap-align: center;
+    height: 100vh;
+    /*width: 100vw;*/
+    flex: none;
+}
+
+quote {
+    font-style: italic;
+}
+
+pre {
+    background-color: #444;
+    padding: 5px;
+    display: block;
+    border-radius: 5px;
+    color: #ddd;
+    white-space: pre-wrap;
+}
