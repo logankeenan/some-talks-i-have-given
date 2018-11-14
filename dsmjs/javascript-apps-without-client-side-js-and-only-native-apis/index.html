@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>dsmjs - Javascript Apps without client-side js and only native APIs</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<section>
+    <h1>Building JavaScript Apps without Client-Side JS and only Native APIs</h1>
+    <h2>Logan Keenan</h2>
+</section>
+<section>
+    <h1>What this talk is not about?</h1>
+
+    <ul>
+        <li>It's not about bashing frameworks/libraries</li>
+    </ul>
+    <!--
+    Notes:
+    -->
+</section>
+<section>
+    <h1>What is this talk about?</h1>
+
+    <ul>
+        <li>A little bit of history</li>
+        <li>Perspective</li>
+        <li>Simplicity</li>
+    </ul>
+    <!--
+    Notes:
+    perspective: cost of JS
+    simplicity: app development doesn't need to be complicated and why I was motivated to do this. people don't know,
+        confusing,
+    -->
+</section>
+<section>
+    <h1>A Brief History</h1>
+
+    <ul>
+        <li>World Wide Web is invented by Tim Berners-Lee in 1989</li>
+        <li>World Wide Web is put in the public domain - April 30, 1993</li>
+        <li>
+            <div>Amazon - 1994</div>
+            <div>Google - 1998</div>
+            <div>Ebay - 1995</div>
+            <div>MySpace - 2003</div>
+            <div>Facebook - 2004</div>
+        </li>
+        <li>The first draft for XMLHttpRequest (ajax) was on April 5, 2006</li>
+        <li>Chrome stable release - December 11, 2008</li>
+        <li>Angular - October 13, 2010</li>
+        <li>Backbone.js - October 20, 2010</li>
+    </ul>
+
+    <!--
+     Notes:
+     WWW - resources are linked together by urls and hyperlinks
+     WWW versus internet
+
+    -->
+</section>
+<section>
+    <h1>JavaScript Costs</h1>
+    <ul>
+        <li>
+            1 MB of Javascript is not equal to 1 MB photo
+        </li>
+        <li>
+            Amazon and Github's main features work without JS
+        </li>
+    </ul>
+
+    <p>The Cost of JavaScript - Addy Osmani
+        <a href="https://medium.com/dev-channel/the-cost-of-javascript-84009f51e99e">2017</a>
+        <a href="https://medium.com/@addyosmani/the-cost-of-javascript-in-2018-7d8950fbb5d4">2018</a>
+    </p>
+    <!--
+     Notes:
+     parse, compile, and the execute versus
+     Developer cost
+    -->
+</section>
+<section>
+    <h1>Text Costs</h1>
+
+    <ul>
+        <li>
+            UTF-8 characters are between 1 - 4 bytes
+        </li>
+        <li>
+            First 128 UTF-8 characters (1 byte each): NUL, SOH, STX, ETX, EOT, ENQ, ACK, BEL, BS, TAB, LF, VT, FF, CR,
+            SO, SI, DLE,
+            DC1, DC2, DC3, DC4, NAK, SYN, ETB, CAN, EM, SUB, ESC, FS, GS, RS, US Space, !, \", #, $, %, &, ', (, ), *,
+            +, ,, -, ., /, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, :, ;, <, =, >, ?, @, A, B, C, D, E, F, G, H, I, J, K, L, M, N,
+            O, P, Q, R, S, T, U, V, W, X, Y, Z, [, \, ], ^, _, `, a, b, c, d, e, f, g, h, i, j, k, l, m, n, o, p, q, r,
+            s, t, u, v, w, x, y, z, {, |, }, ~, DEL
+        </li>
+        <li>
+            <strong>1mb ~ 1,000,000 characters considering the list above</strong>
+        </li>
+    </ul>
+    <!--Notes
+    The King James Authorized Bible is 3,116,480 characters according to wordcounter.net
+    How many Bibles is your web page? What is all that code doing? Is it being used? Is it valuable?
+    Isn't event considering compression
+    -->
+</section>
+<section>
+    <h1>A world without client-side JS</h1>
+    <ul>
+        <li>Basic WWW features</li>
+        <li>Web app versus web page</li>
+        <li>MVC</li>
+    </ul>
+
+    <!--Notes
+    Anchor tags, Form tags - GET/POST, Redirect, the works really well.
+    Web app - dynamic. Web page static content
+    MVC - C#, java, ruby, python, and php all still use MVC today.
+    Model - use to represent the data on the page
+    View - creates a visual representation of the model.
+    Controller, determines what the model is and what view it should be passed
+    -->
+</section>
+</body>
+</html>
